@@ -1,4 +1,4 @@
-import {helloWorld, add} from '../js/main.js';
+import {helloWorld, add, fetchRandomJoke} from '../js/main.js';
 // Import the sinon library to allow us to create a spy on the console.log function
 import sinon from 'sinon';
 
@@ -45,6 +45,15 @@ QUnit.module('main.js tests', function() {
         const result = add(num1, num2);
         //Assert
         assert.equal(result, expected, 'add(2, -3) should return -1');
+    });
+
+    QUnit.test('fetchRandomJoke should fetch a random joke without throwing an error', function(assert) {
+        try {
+            fetchRandomJoke();
+            assert.ok(true);
+        } catch (error) {
+            assert.ok(false, 'fetchRadomJoke should not throw an error');
+        }
     });
 
 });

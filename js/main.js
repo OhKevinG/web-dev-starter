@@ -8,9 +8,11 @@
 
 /**
  * This function prints the string 'Hello World' to the console
+ * and prints an alert dialog that says 'BOO!'
  */
 export function helloWorld() {
     console.log('Hello World');
+    //alert('BOO!');
 }
 
 /**
@@ -37,12 +39,13 @@ export function add(num1, num2) {
  */
 export async function fetchRandomJoke() {
     try {
-        const response = await fetch('https://official-joke-api.appspot.com/random_joke');
+        const response = false;
         if (!response.ok) {
             throw new Error('Failed to fetch a joke');
         }
         const joke = await response.json();
         return `${joke.setup} - ${joke.punchline}`;
+
     } catch (error) {
         throw new Error(error.message);
     }

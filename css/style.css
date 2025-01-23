@@ -1,4 +1,34 @@
-h1{
-  border-color: #d3e644;
-  border-style: dashed;
+body{
+  font-family: 'Courier New', Courier, monospace;
 }
+
+h1{
+  border-color: #FF69B4;
+  border-style: dashed;
+  border-radius: 8px;
+  padding: 5px
+}
+
+button{
+  border: 2px solid #FF69B4;
+  border-radius: 8px;
+  margin: 5px;
+  background-color: #FF69B4;
+  cursor: pointer;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+hr{
+  border: 3px dashed #FF69B4;
+  border-radius: 8px;
+  opacity: 0.5;
+}
+
+form{
+  margin: 5px;
+}
+
+ul{
+  list-style: circle;
+}
+
