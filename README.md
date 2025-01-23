@@ -4,9 +4,9 @@ Kevin Gutierrez
 
 # web-dev-starter
 
-    To run the website, clone the git repository and launch a live preview of index.html. 
+To run the website, clone the git repository and launch a live preview of index.html. 
 
-# testing
+# TESTING
 
-    I was unable to figure out how to successfully test the fetchRandomJoke method. Any tips would be much appreciated!
+I was unable to figure out how to successfully test the fetchRandomJoke method. Any tips would be much appreciated!
 
