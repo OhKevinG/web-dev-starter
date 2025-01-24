@@ -47,13 +47,14 @@ QUnit.module('main.js tests', function() {
         assert.equal(result, expected, 'add(2, -3) should return -1');
     });
 
-    QUnit.test('fetchRandomJoke should fetch a random joke without throwing an error', function(assert) {
-        try {
-            fetchRandomJoke();
-            assert.ok(true);
-        } catch (error) {
-            assert.ok(false, 'fetchRadomJoke should not throw an error');
-        }
+    QUnit.test('fetchRandomJoke should return a string that has the format \"setup - punchline\"', async function(assert) {
+        //Arrange
+        const regex = new RegExp(". - .");
+        //Act
+        const result = await fetchRandomJoke();
+        //Assert
+        assert.true(typeof result === 'string');
+        assert.true(regex.test(result));
     });
 
 });
